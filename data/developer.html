@@ -1,0 +1,144 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<script>
+
+function submitTextfield() {
+  let result_element = document.getElementById('textfield_result');
+  let message_value = document.getElementById('textfield_message').value;
+  sendContent(message_value, result_element);
+}
+
+function submitDemo0() {
+  let result_element = document.getElementById('demo0_result');
+  let message_value = "<div class=\"image empty\"><span class=\"size\">0x0</span></div>";
+  sendContent(message_value, result_element);
+}
+
+function submitDemo1() {
+  let result_element = document.getElementById('demo1_result');
+  let message_value = "<div class=\"themearc image nonempty\"><span class=\"size\">3x3</span><div class=\"themearc image rows-container\"><span class=\"themearc image rows\"><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_7\">7</span><span class=\"themearc symbol_7\">7</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_7\">7</span><span class=\"themearc symbol_7\">7</span><span class=\"themearc symbol_7\">7</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_7\">7</span><span class=\"themearc symbol_7\">7</span></span></span></div></div>";
+  sendContent(message_value, result_element);
+}
+
+function submitDemo2() {
+  let result_element = document.getElementById('demo2_result');
+  let message_value = "<div class=\"themearc image nonempty\"><span class=\"size\">9x9</span><div class=\"themearc image rows-container\"><span class=\"themearc image rows\"><span class=\"themearc image row\"><span class=\"themearc symbol_3\">3</span><span class=\"themearc symbol_3\">3</span><span class=\"themearc symbol_3\">3</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_8\">8</span><span class=\"themearc symbol_8\">8</span><span class=\"themearc symbol_8\">8</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_3\">3</span><span class=\"themearc symbol_3\">3</span><span class=\"themearc symbol_3\">3</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_8\">8</span><span class=\"themearc symbol_5\">5</span><span class=\"themearc symbol_8\">8</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_3\">3</span><span class=\"themearc symbol_3\">3</span><span class=\"themearc symbol_3\">3</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_8\">8</span><span class=\"themearc symbol_8\">8</span><span class=\"themearc symbol_8\">8</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_7\">7</span><span class=\"themearc symbol_5\">5</span><span class=\"themearc symbol_7\">7</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_7\">7</span><span class=\"themearc symbol_7\">7</span><span class=\"themearc symbol_7\">7</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_7\">7</span><span class=\"themearc symbol_7\">7</span><span class=\"themearc symbol_7\">7</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_6\">6</span><span class=\"themearc symbol_6\">6</span><span class=\"themearc symbol_6\">6</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_5\">5</span><span class=\"themearc symbol_9\">9</span><span class=\"themearc symbol_9\">9</span><span class=\"themearc symbol_9\">9</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_6\">6</span><span class=\"themearc symbol_6\">6</span><span class=\"themearc symbol_6\">6</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_9\">9</span><span class=\"themearc symbol_9\">9</span><span class=\"themearc symbol_9\">9</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_6\">6</span><span class=\"themearc symbol_5\">5</span><span class=\"themearc symbol_6\">6</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_5\">5</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_9\">9</span><span class=\"themearc symbol_9\">9</span><span class=\"themearc symbol_5\">5</span></span></span></div></div>";
+  sendContent(message_value, result_element);
+}
+
+function submitDemo3() {
+  let result_element = document.getElementById('demo3_result');
+  let message_value = "<div class=\"themearc compare\"><span class=\"themearc compare-item\"><div class=\"themearc image nonempty\"><span class=\"size\">9x9</span><div class=\"themearc image rows-container\"><span class=\"themearc image rows\"><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_5\">5</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_5\">5</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_5\">5</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span></span></span></div></div></span><span class=\"themearc compare-item\"><div class=\"themearc image nonempty\"><span class=\"size\">9x9</span><div class=\"themearc image rows-container\"><span class=\"themearc image rows\"><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_5\">5</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_5\">5</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_5\">5</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span></span><span class=\"themearc image row\"><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_1\">1</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span><span class=\"themearc symbol_0\">0</span></span></span></div></div></span></div>";
+  sendContent(message_value, result_element);
+}
+
+function submitDemo4() {
+  let result_element = document.getElementById('demo4_result');
+  let message_value = "I'm a single line error message";
+  sendContent(message_value, result_element);
+}
+
+function submitDemo5() {
+  let result_element = document.getElementById('demo5_result');
+  let message_value = "I'm a multi-line error message<br>error line 2 - message<br>error line 3 - message<br>error line 4 - message";
+  sendContent(message_value, result_element);
+}
+
+function sendContent(message_value, result_element) {
+  // Creating a XHR object
+  let xhr = new XMLHttpRequest();
+  let url = "/event";
+
+  // open a connection
+  xhr.open("POST", url, true);
+
+  // Set the request header i.e. which type of content you are sending
+  xhr.setRequestHeader("Content-Type", "application/json");
+
+  // Create a state change callback
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+
+      // Print received data from server
+      result_element.innerHTML = this.responseText;
+
+    }
+  };
+
+  // Converting JSON data to string
+  var data = JSON.stringify({ "message": message_value });
+
+  // Sending data with the request
+  xhr.send(data);
+}
+
+</script>
+</head>
+
+<body>
+
+  <div id="textfield">
+    <h1>Textfield - Send content</h1>
+    <div>
+      <input type="text" id="textfield_message" placeholder="The message" value="message">
+    </div>
+    <div>
+      <button onclick="submitTextfield()">Submit</button>
+    </div>
+    <div id="textfield_result" style="color:green"></div>
+  </div>
+
+  <div id="demo0">
+    <h1>Demo0 - empty image</h1>
+    <div>
+      <button onclick="submitDemo0()">Submit</button>
+    </div>
+    <div id="demo0_result" style="color:green"></div>
+  </div>
+
+  <div id="demo1">
+    <h1>Demo1 - small object</h1>
+    <div>
+      <button onclick="submitDemo1()">Submit</button>
+    </div>
+    <div id="demo1_result" style="color:green"></div>
+  </div>
+
+  <div id="demo2">
+    <h1>Demo2 - big object</h1>
+    <div>
+      <button onclick="submitDemo2()">Submit</button>
+    </div>
+    <div id="demo2_result" style="color:green"></div>
+  </div>
+
+  <div id="demo3">
+    <h1>Demo3 - comparison of two objects</h1>
+    <div>
+      <button onclick="submitDemo3()">Submit</button>
+    </div>
+    <div id="demo3_result" style="color:green"></div>
+  </div>
+
+  <div id="demo4">
+    <h1>Demo4 - error message - one line</h1>
+    <div>
+      <button onclick="submitDemo4()">Submit</button>
+    </div>
+    <div id="demo4_result" style="color:green"></div>
+  </div>
+
+  <div id="demo5">
+    <h1>Demo5 - error message - multi line</h1>
+    <div>
+      <button onclick="submitDemo5()">Submit</button>
+    </div>
+    <div id="demo5_result" style="color:green"></div>
+  </div>
+
+</body>
+</html>
+
