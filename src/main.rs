@@ -117,6 +117,7 @@ async fn get_config(req: tide::Request<State>) -> tide::Result {
 
 async fn webserver_with_metrics(webserver_address: &str, config_websocket_port: u16, string_queue: StringQueue) -> std::result::Result<(), Box<dyn std::error::Error>> {
     println!("Webserver - Listening on: '{}' - Open this in the browser to see the console.", webserver_address);
+    println!("CTRL-C to stop the server.");
     let mut app = tide::with_state(State {
         config_websocket_port: config_websocket_port,
         string_queue
