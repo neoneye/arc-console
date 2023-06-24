@@ -16,9 +16,9 @@ Screenshots of what the console output looks like:
 
 ```
 PROMPT> cargo run
-   Compiling web_console v0.1.0 (/Users/neoneye/git/arc-console)
-    Finished dev [unoptimized + debuginfo] target(s) in 0.91s
-     Running `target/debug/web_console`
+   Compiling arc_console v0.1.0 (/Users/neoneye/git/arc-console)
+    Finished dev [unoptimized + debuginfo] target(s) in 1.79s
+     Running `target/debug/arc_console`
 Webserver - Listening on: 'localhost:9000' - Open this in the browser to see the console.
 CTRL-C to stop the server.
 ```
