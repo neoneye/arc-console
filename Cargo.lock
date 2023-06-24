@@ -81,6 +81,20 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2cb2f989d18dd141ab8ae82f64d1a8cdd37e0840f73a406896cf5e99502fab61"
 
 [[package]]
+name = "arc_console"
+version = "0.1.0"
+dependencies = [
+ "env_logger",
+ "futures-util",
+ "log",
+ "serde",
+ "serde_json",
+ "tide",
+ "tokio",
+ "tokio-tungstenite",
+]
+
+[[package]]
 name = "arrayref"
 version = "0.3.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1981,20 +1995,6 @@ checksum = "bcda906d8be16e728fd5adc5b729afad4e444e106ab28cd1c7256e54fa61510f"
 dependencies = [
  "js-sys",
  "wasm-bindgen",
-]
-
-[[package]]
-name = "web_console"
-version = "0.1.0"
-dependencies = [
- "env_logger",
- "futures-util",
- "log",
- "serde",
- "serde_json",
- "tide",
- "tokio",
- "tokio-tungstenite",
 ]
 
 [[package]]

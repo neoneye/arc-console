@@ -1,5 +1,5 @@
 [package]
-name = "web_console"
+name = "arc_console"
 version = "0.1.0"
 authors = ["Simon Strandgaard <neoneye@gmail.com>"]
 edition = "2021"
