@@ -1,10 +1,16 @@
 # Console for inspecting ARC tasks (Abstraction and Reasoning Corpus) 
 
-This is what it looks like:
+Screenshots of what the console output looks like:
 
 <img src="documents/screenshot-72ca375d.jpg">
 
 <img src="documents/screenshot-f9012d9b.jpg">
+
+<img src="documents/screenshot-8e1813be.jpg">
+
+<img src="documents/screenshot-logisticregression1.jpg">
+
+<img src="documents/screenshot-logisticregression2.jpg">
 
 # Step 1 - Start the server
 
