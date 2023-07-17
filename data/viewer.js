@@ -145,6 +145,12 @@ class PageController {
       const parentDiv = document.getElementById("output-rows");
       parentDiv.appendChild(element0);
       parentDiv.appendChild(element1);
+
+      const imageDivs = element1.querySelectorAll('[data-image]');
+      Array.from(imageDivs).forEach((imageDiv) => {
+        renderJsonDataImage(imageDiv);
+      });
+  
       this.updateScroll();
     }
 
@@ -240,6 +246,7 @@ class PageController {
 var gPageController = null;
   
 function body_onload() {
+    onloadRenderAllJsonDataImages();
     gPageController = new PageController();
 }
   

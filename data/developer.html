@@ -37,12 +37,18 @@ function submitDemo3() {
 
 function submitDemo4() {
   let result_element = document.getElementById('demo4_result');
-  let message_value = "I'm a single line error message";
+  let message_value = "<div class=\"themearc image nonempty\"><span class=\"size\">3x3</span><div class=\"themearc image\" data-image><span class=\"json-data\" style=\"display: none;\">[[0, 1, 0], [1, 1, 1], [0, 1, 1]]</span></div></div>";
   sendContent(message_value, result_element);
 }
 
 function submitDemo5() {
   let result_element = document.getElementById('demo5_result');
+  let message_value = "I'm a single line error message";
+  sendContent(message_value, result_element);
+}
+
+function submitDemo6() {
+  let result_element = document.getElementById('demo6_result');
   let message_value = "I'm a multi-line error message<br>error line 2 - message<br>error line 3 - message<br>error line 4 - message";
   sendContent(message_value, result_element);
 }
@@ -124,7 +130,7 @@ function sendContent(message_value, result_element) {
   </div>
 
   <div id="demo4">
-    <h1>Demo4 - error message - one line</h1>
+    <h1>Demo4 - json-data image</h1>
     <div>
       <button onclick="submitDemo4()">Submit</button>
     </div>
@@ -132,11 +138,20 @@ function sendContent(message_value, result_element) {
   </div>
 
   <div id="demo5">
-    <h1>Demo5 - error message - multi line</h1>
+    <h1>Demo5 - error message - one line</h1>
     <div>
       <button onclick="submitDemo5()">Submit</button>
     </div>
     <div id="demo5_result" style="color:green"></div>
+  </div>
+
+
+  <div id="demo6">
+    <h1>Demo6 - error message - multi line</h1>
+    <div>
+      <button onclick="submitDemo6()">Submit</button>
+    </div>
+    <div id="demo6_result" style="color:green"></div>
   </div>
 
 </body>
